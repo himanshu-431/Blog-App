@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-// Define the Post schema
+// Post schema
 const postSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -15,7 +15,7 @@ const postSchema = new mongoose.Schema({
     default: []
   },
   image: {
-    type: String, // Assuming the image is stored as a URL or file path
+    type: String, // Image is stored as a URL or file path
     required: true
   }
 },
@@ -24,6 +24,6 @@ const postSchema = new mongoose.Schema({
   }
 );
 
-// Create the Post model
+// Post model
 export const Post = mongoose.model('Post', postSchema);
 

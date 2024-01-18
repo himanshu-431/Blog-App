@@ -1,5 +1,4 @@
 import React from 'react'
-// import TagsList from './TagsList'
 
 const BlogCard = ({blogData}) => {
 

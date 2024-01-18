@@ -6,11 +6,9 @@ const PostDescription = () => {
   const [post, setPost] = useState({});
 
   const {postId} = useParams();
-  console.log(postId);
 
   useEffect(() => {
       const fetchPostById = async () => {
-      // const postId = match.params.id;
   
         try {
           const response = await axios.get(`http://localhost:4000/posts/${postId}`);

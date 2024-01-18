@@ -1,18 +1,16 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 import BlogList from './components/BlogList';
-import SearchPosts from './pages/SearchPosts'
-import About from './components/About';
 import PostDescription from './components/PostDescription';
+import SearchPosts from './pages/SearchPosts'
 
 const App = () => {
   return (
     <div>
       <Routes>
         <Route path='/' element={<BlogList />} />
-        <Route path='/about' element={<About />} />
-        {/* <Route path='posts/:word' element={<SearchPosts />} /> */}
         <Route path='posts/:postId' element={<PostDescription />} />
+        {/* <Route path='posts/:word' element={<SearchPosts />} /> */}
       </Routes>
     </div>
   )
