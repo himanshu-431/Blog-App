@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+}
+
+.blog_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog_card {
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+.blog_image {
+    height: 200px;
+    width: 350px;
+}
+
+.view_button {
+    text-align: center;
+}
+
+.view_style {
+    color: white;
+    background-color: blue;
+}
+
+.description_image {
+    height: 505px;
+    width: 720px;
+}
+
+.post_details {
+    text-align: center;
+}
